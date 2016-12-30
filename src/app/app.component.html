@@ -1,11 +1,18 @@
-<h1>
-  {{title}}
-</h1>
+<nav class="navbar navbar-dark navbar-inverse">
+  <div class="container">
+    <a class="navbar-brand" href="#">cyzHome</a>
+    <ul class="nav navbar-nav">
+      <li *ngFor="let navconfig of navconfigs"
+          class="nav-item"
+          [class.active]="navconfig.isDefaultActive"
+          [routerLink]="navconfig.routePath"
+          [routerLinkActive]="navconfig.routeActive">
+          <a class="nav-link" href="#" (click)="onNavLink($event)">{{navconfig.innerText}}</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
 <div class="container">
-  <button type="button" class="btn btn-outline-primary">Primary</button>
-  <button type="button" class="btn btn-outline-secondary">Secondary</button>
-  <button type="button" class="btn btn-outline-success">Success</button>
-  <button type="button" class="btn btn-outline-info">Info</button>
-  <button type="button" class="btn btn-outline-warning">Warning</button>
-  <button type="button" class="btn btn-outline-danger">Danger</button>
+  <router-outlet></router-outlet>
 </div>
