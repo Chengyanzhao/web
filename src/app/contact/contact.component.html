@@ -1,21 +1,29 @@
-<div class="container">
-	<div class="row clearfix">
-		<div class="col-md-12 column">
-			<div class="wrapper">
-				<ul class="nav nav-pills">
-					<li class="nav-item">
-						<a href="#" class="nav-link active">Active</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link">Link</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link">Another link</a>
-					</li>
-					<li class="nav-item">
-						<a href="#" class="nav-link disabled">Disabled</a>
-					</li>
-				</ul>
+<div class="contact">
+	<div class="container">
+		<div class="row clearfix">
+			<div class="col-md-12 column">
+				<div class="icon-wrapper">
+					<ul class="nav nav-pills nav-inverse">
+						<li *ngFor="let contact of myContacts" class="nav-item" (mouseenter)="iconFocus($event,contact)">
+							<a href="#" class="nav-link" (click)="$event.preventDefault();">
+								<img [src]="'../../resource/icon/'+contact.iconFileName" [alt]="contact.name">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row clearfix">
+			<div class="col-md-12 column">
+				<div class="page-header">
+					<h1>
+						{{focusItem.name}} <small *ngIf="focusItem.url" [style.cursor]="'pointer'" ><a [attr.url]="focusItem.url">{{focusItem.value}}</a></small>
+						<small *ngIf="!focusItem.url">{{focusItem.value}}</small>
+					</h1>
+				</div>
 			</div>
 		</div>
 	</div>

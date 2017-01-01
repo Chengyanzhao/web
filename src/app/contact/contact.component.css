@@ -1,3 +1,7 @@
-.wrapper{
-    background: #999;
+.contact{
+    width: 100%;
+    padding-top: 10%;
+}
+.icon-wrapper img{
+    max-height: 40px;
 }

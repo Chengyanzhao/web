@@ -1,18 +1,15 @@
-<nav class="navbar navbar-dark navbar-inverse">
+<nav class="navbar navbar-fixed-top navbar-dark navbar-inverse">
   <div class="container">
     <a class="navbar-brand" href="#">cyzHome</a>
     <ul class="nav navbar-nav">
-      <li *ngFor="let navconfig of navconfigs"
-          class="nav-item"
-          [class.active]="navconfig.isDefaultActive"
-          [routerLink]="navconfig.routePath"
-          [routerLinkActive]="navconfig.routeActive">
-          <a class="nav-link" href="#" (click)="onNavLink($event)">{{navconfig.innerText}}</a>
+      <li *ngFor="let navconfig of navconfigs" class="nav-item" [class.active]="navconfig.isDefaultActive" [routerLink]="navconfig.routePath"
+        [routerLinkActive]="navconfig.routeActive">
+        <a class="nav-link" href="#" (click)="onNavLink($event)">{{navconfig.innerText}}</a>
       </li>
     </ul>
   </div>
 </nav>
 
-<div class="container">
+<div class="wrapper">
   <router-outlet></router-outlet>
 </div>
