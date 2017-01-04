@@ -4,7 +4,7 @@
 			<div class="col-md-12 column">
 				<div class="icon-wrapper">
 					<ul class="nav nav-pills nav-inverse">
-						<li *ngFor="let contact of myContacts" class="nav-item" (mouseenter)="iconFocus($event,contact)">
+						<li *ngFor="let contact of myContacts" class="nav-item" (mouseenter)="iconFocus($event,contact);">
 							<a href="#" class="nav-link" (click)="$event.preventDefault();">
 								<img [src]="'../../resource/icon/'+contact.iconFileName" [alt]="contact.name">
 							</a>
