@@ -10,9 +10,10 @@ import { MapComponent } from '../map/map.component';
 import { BlogComponent } from '../blog/blog.component';
 
 const appRoutes: Routes = [
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: MainComponent },
   { path: 'blog', component: BlogComponent },
-  { path: 'components', component: ComponentsComponent },
+  { path: 'components', loadChildren: 'app/components/components.module.ts#ComponentsModule' },
   { path: 'map', component: MapComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'about', component: AboutComponent },

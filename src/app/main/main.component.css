@@ -1,0 +1,17 @@
+.blog-row{
+    background-color: #616EEF;
+    border-radius: 6px 6px 0 0;
+}
+.components-row{
+    background-color: #09A8FA;
+}
+.map-row{
+    background-color: #1FDEDB;
+}
+.contact-row{
+    background-color: #FFFCBF;
+}
+.about-row{
+    background-color: #F9DE79;
+    border-radius:  0 0 6px 6px;
+}

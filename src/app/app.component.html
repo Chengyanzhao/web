@@ -1,6 +1,6 @@
 <nav class="navbar navbar-fixed-top navbar-dark navbar-inverse">
   <div class="container">
-    <a class="navbar-brand" href="#">cyzHome</a>
+    <a class="navbar-brand" href="#" (click)="goHome($event)" go-home >cyzHome</a>
     <ul class="nav navbar-nav">
       <li *ngFor="let navconfig of navconfigs" class="nav-item" [class.active]="navconfig.isDefaultActive" [routerLink]="navconfig.routePath"
         [routerLinkActive]="navconfig.routeActive">

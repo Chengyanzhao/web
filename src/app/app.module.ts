@@ -3,8 +3,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { ComponentsModule } from './components/components.module';
-
 import { MainnavRoutingModule } from './mainnav-routing/mainnav-routing.module';
 
 import { AppComponent } from './app.component';
@@ -14,6 +12,7 @@ import { MainComponent } from './main/main.component';
 
 import { MapComponent } from './map/map.component';
 import { BlogComponent } from './blog/blog.component';
+import { GoHomeDirective } from './shared/go-home.directive';
 
 
 @NgModule({
@@ -23,13 +22,13 @@ import { BlogComponent } from './blog/blog.component';
     ContactComponent,
     MainComponent,
     MapComponent,
-    BlogComponent
+    BlogComponent,
+    GoHomeDirective
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    ComponentsModule,
     MainnavRoutingModule
   ],
   providers: [],
