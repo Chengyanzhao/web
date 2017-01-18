@@ -1,15 +1,31 @@
-<nav class="navbar navbar-fixed-top navbar-dark navbar-inverse">
-  <div class="container">
-    <a class="navbar-brand" href="#" (click)="goHome($event)" go-home >cyzHome</a>
-    <ul class="nav navbar-nav">
-      <li *ngFor="let navconfig of navconfigs" class="nav-item" [class.active]="navconfig.isDefaultActive" [routerLink]="navconfig.routePath"
-        [routerLinkActive]="navconfig.routeActive">
-        <a class="nav-link" href="#" (click)="onNavLink($event)">{{navconfig.innerText}}</a>
-      </li>
-    </ul>
+<header>
+  <nav class="navbar navbar-fixed-top navbar-dark navbar-inverse">
+    <div class="container">
+      <a class="navbar-brand" href="#" (click)="goHome($event)" go-home>cyzHome</a>
+      <ul class="nav navbar-nav">
+        <li *ngFor="let navconfig of navconfigs" class="nav-item" [class.active]="navconfig.isDefaultActive" [routerLink]="navconfig.routePath"
+          [routerLinkActive]="navconfig.routeActive">
+          <a class="nav-link" href="#" (click)="onNavLink($event)">{{navconfig.innerText}}</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<main>
+  <div class="wrapper">
+    <router-outlet></router-outlet>
   </div>
-</nav>
-
-<div class="wrapper">
-  <router-outlet></router-outlet>
-</div>
+</main>
+<footer>
+  <div class="footer-copyright">
+    <div class=" container">
+      <div class="row">
+        <div class="row-md-12">
+          <div class="text-center">
+            <p>©&nbsp;2017&nbsp;darkclouds.com&nbsp;&nbsp;京ICP备 16067694</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
