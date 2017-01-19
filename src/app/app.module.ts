@@ -13,6 +13,8 @@ import { MainComponent } from './main/main.component';
 import { MapComponent } from './map/map.component';
 import { BlogComponent } from './blog/blog.component';
 import { GoHomeDirective } from './shared/go-home.directive';
+import { ResourcesComponent } from './resources/resources.component';
+import { ColorComponent } from './resources/color/color.component';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { GoHomeDirective } from './shared/go-home.directive';
     MainComponent,
     MapComponent,
     BlogComponent,
-    GoHomeDirective
+    GoHomeDirective,
+    ResourcesComponent,
+    ColorComponent
   ],
   imports: [
     BrowserModule,
