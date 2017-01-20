@@ -1,21 +1,37 @@
-<div class="container" id="res-container">
-  <div class="row">
-    <div class="row-md-4">
-      <div id="font" class="nav-item">
-        <div class="nav-item-wrapper">
-        </div>
-      </div>
+<div class="container">
+  <div class="row clearfix">
+    <div class="col-md-3">
+      <ul class="affix">
+        <li class="font">
+          <a scrollTo href="#font" (click)="test($event)">Font</a>
+          <ul>
+            <li class="source-code-pro">
+              <a href="#source-code-pro">Source Code Pro</a>
+            </li>
+            <li class="helvetica-neue">
+              <a href="#helvetica-neue">Helvetica Neue</a>
+            </li>
+          </ul>
+        </li>
+        <li class="color">
+          <a scrollTo href="#color">Color</a>
+        </li>
+        <li class="icon">
+          <a scrollTo href="#icon">Icon</a>
+        </li>
+      </ul>
     </div>
-    <div class="row-md-4">
-      <div id="color" class="nav-item">
-        <div class="nav-item-wrapper">
+    <div class="col-md-9">
+      <div id="font" class="source-item">
+        <div class="page-header">
+          <h1>Font <small>some fonts</small></h1>
         </div>
-      </div>
-    </div>
-    <div class="row-md-4">
-      <div id="gif" class="nav-item">
-        <div class="nav-item-wrapper">
-        </div>
+        <h2 id="navbar-sourcecodepro">Source</h2>
+        <p>这是一款Adobe制作的字体，适用于系统使用。</p>
+        <img src="../../assets/image/app/resources/font/SourceCodePro.png" alt="Source Code Pro">
+        <h2 id="navbar-helveticaneue">Helvetica Neue</h2>
+        <p>这是一款适合网页展示的字体</p>
+        <img src="../../assets/image/app/resources/font/HelveticaNeue.png" alt="Helvetica Neue">
       </div>
     </div>
   </div>

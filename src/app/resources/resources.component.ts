@@ -11,5 +11,8 @@ export class ResourcesComponent implements OnInit {
 
   ngOnInit() {
   }
+  test($event) {
 
+    // $event.preventDefault();
+  }
 }

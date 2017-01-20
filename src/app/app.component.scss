@@ -1,0 +1,34 @@
+$bgcolor:#e5e5e5;
+.wrapper {
+  width: 100%;
+  height: 0px;
+  padding: 5% 0;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+}
+
+header {
+  .navbar-brand {
+    padding: 0;
+  }
+  .logo {
+    width: 100px;
+    height: 50px;
+  }
+}
+
+main {
+  height: 100%;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 0;
+  font: 14px/1.5 "PingFang SC", Helvetica, "Helvetica Neue", "微软雅黑", Tahoma, Arial, sans-serif;
+  background-color: $bgcolor;
+  line-height: 40px;
+}

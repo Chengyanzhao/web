@@ -1,7 +1,9 @@
 <header>
-  <nav class="navbar navbar-fixed-top navbar-dark navbar-inverse">
+  <nav class="navbar navbar-static-top navbar-default">
     <div class="container">
-      <a class="navbar-brand" href="#" (click)="goHome($event)" go-home>cyzHome</a>
+      <a class="navbar-brand" href="#" (click)="goHome($event)" go-home>
+        <img class="logo" src="../assets/image/main/logo.png" alt="darkcloud.top" />
+      </a>
       <ul class="nav navbar-nav">
         <li *ngFor="let navconfig of navconfigs" class="nav-item" [class.active]="navconfig.isDefaultActive" [routerLink]="navconfig.routePath"
           [routerLinkActive]="navconfig.routeActive">
@@ -22,7 +24,7 @@
       <div class="row">
         <div class="row-md-12">
           <div class="text-center">
-            <p>©&nbsp;2017&nbsp;darkclouds.com&nbsp;&nbsp;京ICP备 16067694</p>
+            <p>©&nbsp;2017&nbsp;darkclouds.top&nbsp;&nbsp;京ICP备 16067694</p>
           </div>
         </div>
       </div>

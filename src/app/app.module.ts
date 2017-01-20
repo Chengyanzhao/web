@@ -16,6 +16,8 @@ import { GoHomeDirective } from './shared/go-home.directive';
 import { ResourcesComponent } from './resources/resources.component';
 import { ColorComponent } from './resources/color/color.component';
 
+import { ScrollTo } from './shared/scrollTo';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { ColorComponent } from './resources/color/color.component';
     BlogComponent,
     GoHomeDirective,
     ResourcesComponent,
-    ColorComponent
+    ColorComponent,
+    ScrollTo
   ],
   imports: [
     BrowserModule,

@@ -11,7 +11,7 @@ import { ResourcesComponent } from '../resources/resources.component';
 import { BlogComponent } from '../blog/blog.component';
 
 const appRoutes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  // { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: MainComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'components', loadChildren: 'app/components/components.module.ts#ComponentsModule' },
@@ -19,7 +19,7 @@ const appRoutes: Routes = [
   { path: 'resources', component: ResourcesComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'about', component: AboutComponent },
-  { path: '', redirectTo: 'home', pathMatch: 'full' }
+  // { path: '', redirectTo: 'home', pathMatch: 'full' }
 ]
 
 @NgModule({
