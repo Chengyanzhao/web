@@ -1,0 +1,18 @@
+#res-container{
+    background: #666;
+}
+#font .nav-item-wrapper {
+  background: #333 url('./../../assets/image/app/resources/font/font-wapper.png');
+  background-size: cover;
+  height: 220px;
+}
+#color .nav-item-wrapper {
+  background: #333 url('./../../assets/image/app/resources/color/color-wapper.png');
+  background-size: cover;
+  height: 220px;
+}
+#gif .nav-item-wrapper {
+  background: #333 url('./../../assets/image/app/resources/font/font-wapper.png');
+  background-size: cover;
+  height: 220px;
+}

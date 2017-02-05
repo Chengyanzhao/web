@@ -12,6 +12,7 @@ const mainNavConfig: NavConfig[] = [
   { routePath: 'blog', routeActive: 'active', innerText: 'blog', isDefaultActive: false, attrDirective: '' },
   { routePath: 'components', routeActive: 'active', innerText: 'components', isDefaultActive: false, attrDirective: '' },
   { routePath: 'map', routeActive: 'active', innerText: 'map', isDefaultActive: false, attrDirective: '' },
+  { routePath: 'resources', routeActive: 'active', innerText: 'resources', isDefaultActive: false, attrDirective: '' },
   { routePath: 'contact', routeActive: 'active', innerText: 'contact', isDefaultActive: false, attrDirective: '' },
   { routePath: 'about', routeActive: 'active', innerText: 'about', isDefaultActive: false, attrDirective: '' },
 ];
@@ -19,7 +20,7 @@ const mainNavConfig: NavConfig[] = [
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
   title = 'app works!';

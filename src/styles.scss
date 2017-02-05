@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family: 'Source Code Pro';
+  src: url('./assets/font/SourceCodePro/SourceCodePro.eot');
+  src: url('./assets/font/SourceCodePro/SourceCodePro.eot?#iefix') format('embedded-opentype'), url('./assets/font/SourceCodePro/SourceCodePro.woff') format('woff'), url('./assets/font/SourceCodePro/SourceCodePro.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./assets/font/HelveticalNeuePro/HelveticaNeueLTPro-Md.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$englishFont:"Helvetica Neue",
+Helvetica,
+Arial,
+sans-serif;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  // height: 100%;
+  font-family: $englishFont;
+}
