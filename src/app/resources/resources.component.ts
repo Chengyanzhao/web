@@ -14,5 +14,6 @@ export class ResourcesComponent implements OnInit {
   test($event) {
 
     $event.preventDefault();
+    // $event.preventDefault();
   }
 }
