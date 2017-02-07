@@ -6,7 +6,6 @@ import { HttpModule } from '@angular/http';
 import { MainnavRoutingModule } from './mainnav-routing/mainnav-routing.module';
 
 import { AppComponent } from './app.component';
-import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { MainComponent } from './main/main.component';
 
@@ -26,7 +25,6 @@ import { CancelDefEvent } from './shared/directive/cancelDefEvent.directive';
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent,
     ContactComponent,
     MainComponent,
     MapComponent,
