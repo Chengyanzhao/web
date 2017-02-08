@@ -8,6 +8,7 @@ import { MainnavRoutingModule } from './mainnav-routing/mainnav-routing.module';
 import { AppComponent } from './app.component';
 import { ContactComponent } from './contact/contact.component';
 import { MainComponent } from './main/main.component';
+import { AboutComponent } from './about/about.component';
 
 import { MapComponent } from './map/map.component';
 import { BlogComponent } from './blog/blog.component';
@@ -33,7 +34,8 @@ import { CancelDefEvent } from './shared/directive/cancelDefEvent.directive';
     ResourcesComponent,
     ColorComponent,
     ScrollTo,
-    CancelDefEvent
+    CancelDefEvent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

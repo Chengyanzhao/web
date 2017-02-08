@@ -4,76 +4,82 @@
 			<div class="col-md-12 column">
 				<div class="jumbotron">
 					<h1>
-						Hello, world!
+						Year Progress
 					</h1>
 					<p>
-						这里仅记录我个人的一些学习记录、项目经验、网上看到的好东西、踩过的坑以及还没踩明白的坑。
+						{{curYear}}年已进行
 					</p>
-					<hr>
-					<ul>
-						<li><a href="">blog - 博客</a></li>
-						<li><a href="" (click)="comListToggle($event)">conponents - 组件</a>
-							<ol *ngIf="isShowComsLst">
-								<li><a href="">组件1</a></li>
-								<li><a href="">组件2</a></li>
-								<li><a href="">组件3</a></li>
-								<li><a href="">组件4</a></li>
-								<li><a href="">组件5</a></li>
-								<li><a href="">组件6</a></li>
-							</ol>
-						</li>
-						<li><a href="">map - 地图</a></li>
-						<li><a href="">contact - 联系我</a></li>
-						<li><a href="">about - 关于</a></li>
-					</ul>
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" [attr.aria-valuenow]="yearProgress" [attr.aria-valuemin]="0" aria-valuemax="100"
+							[style.width]="yearProgressRatio" style="min-width: 2em;">
+							{{yearProgress}}%
+					</div>
 				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row blog-row struct-item">
-				<div class="col-md-12">
-					<h2>博客</h2>
-					<p>博客中我会写一些技术类的问题，包括学习记录、技术分享、遇到及未解决的坑。
-					</p>
-					<p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-				</div>
-
-			</div>
-			<div class="row components-row struct-item">
-				<div class="col-md-12">
-					<h2>组件</h2>
-					<p>组件中会增加一些常用组件的angular2包装代码，后期有空在添加js代码。由于本系统完全基于angular2框架开发，后期js代码会以module的形式写出。并提供angluar2及js代码的copy。开发中若需要某些组件，找到它并copy代码即可。
-						这里面的内容会不定期更新。网上找到好的东西，有空就会整理上来。如果你有觉得好的组件，也可以通过contact找到我的联系方式并联系我，我会加上来的。
-					</p>
-					<p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-				</div>
-
-			</div>
-			<div class="row map-row struct-item">
-				<div class="col-md-12">
-					<h2>地图</h2>
-					<p>GIS毕竟是老本行，虽然不想搞但是又舍不得放下。当前gis处于一个尴尬的境地，用的少玩的也少。很多嵌入gis的技术只能从国外网站找到，遇到问题也很难解决。 后期我会给map单开一个博客页，记录一些gis开发技术上的log。
-					</p>
-					<p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-				</div>
-
-			</div>
-			<div class="row contact-row struct-item">
-				<div class="col-md-12">
-					<h2>联系我</h2>
-					<p>如果你有好的建议，本网站的bug及各种问题的咨询，可以在contact中找到我，这里不仅有我的联系方式，还有csdn、github的链接。
-					</p>
-					<p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-				</div>
-			</div>
-			<div class="row about-row struct-item">
-				<div class="col-md-4">
-					<h2>关于</h2>
-					<p>这里面暂时没想好放啥，先占个位。可能会先放一些网站搭建的东西。
-					</p>
-					<p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
-				</div>
+				<hr>
+				<ul>
+					<li><a href="">blog - 博客</a></li>
+					<li><a href="" (click)="comListToggle($event)">conponents - 组件</a>
+						<ol *ngIf="isShowComsLst">
+							<li><a href="">组件1</a></li>
+							<li><a href="">组件2</a></li>
+							<li><a href="">组件3</a></li>
+							<li><a href="">组件4</a></li>
+							<li><a href="">组件5</a></li>
+							<li><a href="">组件6</a></li>
+						</ol>
+					</li>
+					<li><a href="">map - 地图</a></li>
+					<li><a href="">contact - 联系我</a></li>
+					<li><a href="">about - 关于</a></li>
+				</ul>
 			</div>
 		</div>
 	</div>
+	<div class="container">
+		<div class="row blog-row struct-item">
+			<div class="col-md-12">
+				<h2>博客</h2>
+				<p>博客中我会写一些技术类的问题，包括学习记录、技术分享、遇到及未解决的坑。
+				</p>
+				<p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+			</div>
+
+		</div>
+		<div class="row components-row struct-item">
+			<div class="col-md-12">
+				<h2>组件</h2>
+				<p>组件中会增加一些常用组件的angular2包装代码，后期有空在添加js代码。由于本系统完全基于angular2框架开发，后期js代码会以module的形式写出。并提供angluar2及js代码的copy。开发中若需要某些组件，找到它并copy代码即可。
+					这里面的内容会不定期更新。网上找到好的东西，有空就会整理上来。如果你有觉得好的组件，也可以通过contact找到我的联系方式并联系我，我会加上来的。
+				</p>
+				<p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+			</div>
+
+		</div>
+		<div class="row map-row struct-item">
+			<div class="col-md-12">
+				<h2>地图</h2>
+				<p>GIS毕竟是老本行，虽然不想搞但是又舍不得放下。当前gis处于一个尴尬的境地，用的少玩的也少。很多嵌入gis的技术只能从国外网站找到，遇到问题也很难解决。 后期我会给map单开一个博客页，记录一些gis开发技术上的log。
+				</p>
+				<p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+			</div>
+
+		</div>
+		<div class="row contact-row struct-item">
+			<div class="col-md-12">
+				<h2>联系我</h2>
+				<p>如果你有好的建议，本网站的bug及各种问题的咨询，可以在contact中找到我，这里不仅有我的联系方式，还有csdn、github的链接。
+				</p>
+				<p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+			</div>
+		</div>
+		<div class="row about-row struct-item">
+			<div class="col-md-4">
+				<h2>关于</h2>
+				<p>这里面暂时没想好放啥，先占个位。可能会先放一些网站搭建的东西。
+				</p>
+				<p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+			</div>
+		</div>
+	</div>
+</div>
 </div>
