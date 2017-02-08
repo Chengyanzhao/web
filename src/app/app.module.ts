@@ -6,9 +6,9 @@ import { HttpModule } from '@angular/http';
 import { MainnavRoutingModule } from './mainnav-routing/mainnav-routing.module';
 
 import { AppComponent } from './app.component';
-import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { MainComponent } from './main/main.component';
+import { AboutComponent } from './about/about.component';
 
 import { MapComponent } from './map/map.component';
 import { BlogComponent } from './blog/blog.component';
@@ -21,12 +21,12 @@ import { ColorComponent } from './resources/color/color.component';
  * 通用工具指令
  */
 import { ScrollTo } from './shared/scrollTo';
+import { FigletDirective } from './shared/directive/figlet.directive';
 import { CancelDefEvent } from './shared/directive/cancelDefEvent.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent,
     ContactComponent,
     MainComponent,
     MapComponent,
@@ -35,7 +35,9 @@ import { CancelDefEvent } from './shared/directive/cancelDefEvent.directive';
     ResourcesComponent,
     ColorComponent,
     ScrollTo,
-    CancelDefEvent
+    CancelDefEvent,
+    AboutComponent,
+    FigletDirective
   ],
   imports: [
     BrowserModule,

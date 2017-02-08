@@ -10,3 +10,19 @@ if (environment.production) {
 }
 
 platformBrowserDynamic().bootstrapModule(AppModule);
+
+
+var figlet = require('figlet');
+figlet.defaults({ fontPath: './assets/fonts' });
+figlet.text('darkclouds.top\r\n451354@qq.com', {
+  font: 'univers',
+  horizontalLayout: 'default',
+  verticalLayout: 'default'
+}, function (err, data) {
+  if (err) {
+    console.log('Something went wrong...');
+    console.dir(err);
+    return;
+  }
+  console.log(data);
+});
