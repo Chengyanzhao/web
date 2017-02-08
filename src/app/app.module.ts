@@ -21,6 +21,7 @@ import { ColorComponent } from './resources/color/color.component';
  * 通用工具指令
  */
 import { ScrollTo } from './shared/scrollTo';
+import { FigletDirective } from './shared/directive/figlet.directive';
 import { CancelDefEvent } from './shared/directive/cancelDefEvent.directive';
 
 @NgModule({
@@ -35,7 +36,8 @@ import { CancelDefEvent } from './shared/directive/cancelDefEvent.directive';
     ColorComponent,
     ScrollTo,
     CancelDefEvent,
-    AboutComponent
+    AboutComponent,
+    FigletDirective
   ],
   imports: [
     BrowserModule,
