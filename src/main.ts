@@ -15,7 +15,7 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 var figlet = require('figlet');
 figlet.defaults({ fontPath: './assets/fonts' });
 figlet.text('darkclouds.top\r\n451354@qq.com', {
-  font: 'big',
+  font: 'univers',
   horizontalLayout: 'default',
   verticalLayout: 'default'
 }, function (err, data) {
