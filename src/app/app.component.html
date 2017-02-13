@@ -1,5 +1,5 @@
 <header FigletDirective>
-  <nav class="navbar navbar-static-top navbar-default">
+  <!--<nav class="navbar navbar-static-top navbar-default">
     <div class="container">
       <a class="navbar-brand" href="#" (click)="goHome($event)" go-home>
         <img class="logo" src="../assets/image/main/logo.png" alt="darkcloud.top" />
@@ -10,6 +10,29 @@
           <a class="nav-link" href="#" (click)="onNavLink($event)">{{navconfig.innerText}}</a>
           </li>
       </ul>
+    </div>
+  </nav>-->
+  <nav class="navbar navbar-static-top navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-box" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        </button>
+        <a class="navbar-brand" href="#">
+          <img class="img-responsive" src="../assets/image/main/logo.png" alt="darkclouds">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="nav-box">
+        <ul class="nav navbar-nav navbar-right">
+          <li *ngFor="let navconfig of navconfigs" class="nav-item" [class.active]="navconfig.isDefaultActive" [routerLink]="navconfig.routePath"
+            [routerLinkActive]="navconfig.routeActive">
+            <a class="nav-link" href="#" (click)="onNavLink($event)">{{navconfig.innerText}}</a>
+            </li>
+        </ul>
+      </div>
     </div>
   </nav>
 </header>
