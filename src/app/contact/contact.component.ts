@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Renderer } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 
 export class ContactConfig {
@@ -10,13 +10,13 @@ export class ContactConfig {
 }
 
 const contacts: ContactConfig[] = [
-  { name: "facebook", iconFileName: "facebook.png", value: 'cyzFacebook', bgColor: '#333', url: 'www.baidu.com' },
+  { name: "facebook", iconFileName: "facebook.png", value: 'cyzFacebook', bgColor: '#333', url: 'http://www.baidu.com' },
   { name: "QQ", iconFileName: "facebook.png", value: '451354', bgColor: '#333', url: '' },
   { name: "Phone", iconFileName: "facebook.png", value: '13122114111', bgColor: '#333', url: '' },
-  { name: "twitter", iconFileName: "facebook.png", value: 'cyzFacebook1', bgColor: '#3b5998', url: 'www.baidu.com' },
-  { name: "Dribbble", iconFileName: "dribbble.png", value: 'cyzFacebook2', bgColor: '#ea4c89', url: 'www.baidu.com' },
-  { name: "Instagram", iconFileName: "instagram.png", value: 'cyzFacebook2', bgColor: '#8d6851', url: 'www.baidu.com' },
-  { name: "Vimeo", iconFileName: "vimeo.png", value: 'cyzFacebook2', bgColor: '#162221', url: 'www.baidu.com' },
+  { name: "twitter", iconFileName: "facebook.png", value: 'cyzFacebook1', bgColor: '#3b5998', url: 'http://www.baidu.com' },
+  { name: "Dribbble", iconFileName: "dribbble.png", value: 'cyzFacebook2', bgColor: '#ea4c89', url: 'http://www.baidu.com' },
+  { name: "Instagram", iconFileName: "instagram.png", value: 'cyzFacebook2', bgColor: '#8d6851', url: 'http://www.baidu.com' },
+  { name: "Vimeo", iconFileName: "vimeo.png", value: 'cyzFacebook2', bgColor: '#162221', url: 'http://www.baidu.com' },
 
 ]
 
@@ -30,20 +30,19 @@ export class ContactComponent implements OnInit {
   focusItem: ContactConfig = {
     name: "ContactMe", iconFileName: "facebook.png", value: '', bgColor: '#333', url: ''
   };
-  constructor(private route: Router) { }
+  constructor(private route: Router, private render: Renderer) { }
 
   ngOnInit() {
     //window.document.body.style.backgroundColor = "#00b5ec";
   }
 
   iconFocus($event, contact: ContactConfig): void {
-    event.preventDefault();
     this.focusItem = contact;
-    window.document.body.style.backgroundColor = contact.bgColor;
+    this.render.setElementStyle(window.document.getElementsByClassName('contact')[0], 'backgroundColor', contact.bgColor);
   }
 
   iconClick($event): void {
-    $event.preventDefault();
+    //$event.preventDefault();
   }
 
 }

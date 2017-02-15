@@ -27,6 +27,11 @@
       </div>
       <div class="collapse navbar-collapse" id="nav-box">
         <ul class="nav navbar-nav navbar-right">
+          <!--<li class="active" routerLink="home" routerLinkActive="active"><a href="#" (click)="onNavLink($event)">home <span class="sr-only">(current)</span></a></li>
+          <li><a href="./app/example/example.html">示例代码</a></li>
+          <li><a href="./app/updatelog/updatelog.html">更新日志</a></li>
+          <li><a href="./app/download/download.html">下载中心</a></li>-->
+
           <li *ngFor="let navconfig of navconfigs" class="nav-item" [class.active]="navconfig.isDefaultActive" [routerLink]="navconfig.routePath"
             [routerLinkActive]="navconfig.routeActive">
             <a class="nav-link" href="#" (click)="onNavLink($event)">{{navconfig.innerText}}</a>
@@ -40,6 +45,7 @@
   <div class="wrapper">
     <router-outlet></router-outlet>
   </div>
+  <button type="button" class="btn btn-default" id="btn-top">返回顶部</button>
 </main>
 <footer FigletDirective>
   <div class="footer-copyright">

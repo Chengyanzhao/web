@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AboutRoutingModule } from './about-routing.module';
+import { RouterModule } from '@angular/router';
+
+import { aboutRoutes } from './about.routes';
 
 import { AboutComponent } from './about.component';
 
 @NgModule({
   imports: [
     CommonModule,
-    AboutRoutingModule
+    RouterModule.forChild(aboutRoutes)
   ],
   declarations: [
     AboutComponent

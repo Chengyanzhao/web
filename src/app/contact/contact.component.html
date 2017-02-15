@@ -20,7 +20,7 @@
 			<div class="col-md-12 column">
 				<div class="page-header">
 					<h1>
-						{{focusItem.name}} <small *ngIf="focusItem.url" [style.cursor]="'pointer'" ><a [attr.url]="focusItem.url">{{focusItem.value}}</a></small>
+						{{focusItem.name}} <small *ngIf="focusItem.url" [style.cursor]="'pointer'"><a target="_blank" [attr.href]="focusItem.url">{{focusItem.value}}</a></small>
 						<small *ngIf="!focusItem.url">{{focusItem.value}}</small>
 					</h1>
 				</div>

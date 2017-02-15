@@ -2,19 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { RouterModule } from '@angular/router';
 
-import { MainnavRoutingModule } from './mainnav-routing/mainnav-routing.module';
 
 import { AppComponent } from './app.component';
-import { ContactComponent } from './contact/contact.component';
-import { MainComponent } from './main/main.component';
-import { AboutComponent } from './about/about.component';
 
-import { MapComponent } from './map/map.component';
-import { BlogComponent } from './blog/blog.component';
-import { GoHomeDirective } from './shared/go-home.directive';
-import { ResourcesComponent } from './resources/resources.component';
-import { ColorComponent } from './resources/color/color.component';
+import { appRoutes } from './app.routes';
 
 
 /**
@@ -23,27 +16,27 @@ import { ColorComponent } from './resources/color/color.component';
 import { ScrollTo } from './shared/scrollTo';
 import { FigletDirective } from './shared/directive/figlet.directive';
 import { CancelDefEvent } from './shared/directive/cancelDefEvent.directive';
+import { BackTopDirective } from './shared/directive/backTop.directive';
+import { GoHomeDirective } from './shared/go-home.directive';
 
 @NgModule({
   declarations: [
+    // component start
     AppComponent,
-    ContactComponent,
-    MainComponent,
-    MapComponent,
-    BlogComponent,
+    // component end
+
+    // directive start
     GoHomeDirective,
-    ResourcesComponent,
-    ColorComponent,
-    ScrollTo,
     CancelDefEvent,
-    AboutComponent,
-    FigletDirective
+    FigletDirective,
+    BackTopDirective
+    // directive end
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
-    MainnavRoutingModule
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

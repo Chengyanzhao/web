@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-main',
-  templateUrl: './main.component.html',
-  styleUrls: ['./main.component.css']
+  selector: 'app-Home',
+  templateUrl: './Home.component.html',
+  styleUrls: ['./Home.component.css']
 })
-export class MainComponent implements OnInit {
+export class HomeComponent implements OnInit {
   private isShowComsLst: boolean = false;
   tempYearProgress: number = 0;
   yearProgress: string = '0';

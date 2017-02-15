@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
-import { ComponentsRoutingModule } from './components-routing.module';
+import { componentRoutes } from './component.routes';
 
 import { ComponentsComponent } from './components.component';
 import { AnimationComponent } from './animation/animation.component';
@@ -12,7 +13,7 @@ import { ImageComponent } from './image/image.component';
 @NgModule({
   imports: [
     CommonModule,
-    ComponentsRoutingModule
+    RouterModule.forChild(componentRoutes)
   ],
   declarations: [
     ComponentsComponent,
