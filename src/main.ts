@@ -20,7 +20,7 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 // // Launch with the app module factory.
 // platformBrowser().bootstrapModuleFactory(AppModuleNgFactory);
 
-var figlet = require('figlet');
+let figlet = require('figlet');
 figlet.defaults({ fontPath: './assets/fonts' });
 figlet.text('darkclouds.top\r\n451354@qq.com', {
   font: 'Univers',

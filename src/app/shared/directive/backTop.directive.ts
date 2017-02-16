@@ -1,8 +1,8 @@
-import { Directive, ElementRef, Input, HostListener } from '@angular/core';
+import { Directive, HostListener } from '@angular/core';
 
 @Directive({ selector: '[backTop]' })
 export class BackTopDirective {
-    constructor(private el: ElementRef
+    constructor(
     ) {
         //this.viewContainer.clear();
     }

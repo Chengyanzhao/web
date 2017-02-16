@@ -9,6 +9,7 @@ export const appRoutes: Routes = [
     { path: 'resources', loadChildren: 'app/resources/resources.module.ts#ResourcesModule' },
     { path: 'contact', loadChildren: 'app/contact/contact.module.ts#ContactModule' },
     { path: 'about', loadChildren: 'app/about/about.module.ts#AboutModule' },
+    { path: 'ssqworks', loadChildren: 'app/ssqworks/ssqworks.module.ts#SsqworksModule' },
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: '**', loadChildren: 'app/home/home.module.ts#HomeModule' }
 ]

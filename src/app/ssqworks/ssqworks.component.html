@@ -1,0 +1,26 @@
+<div class="contaienr">
+  <div class="row">
+    <div class="col-md-2">
+      <div class="header">
+        <h3>求职简介</h3>
+        <p>这是一个求职简历，这里可以放一些简短的文字。但最好不要太长，几十个字差不多就行了。</p>
+        <ul>
+          <li>
+            <a routerLink="./introduction" routerLinkActive="active">个人简介</a>
+          </li>
+          <li>
+            <a routerLink="./flat" routerLinkActive="active">平面作品</a>
+          </li>
+          <li>
+            <a routerLink="./logo" routerLinkActive="active">logo设计</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-10">
+      <div class="main">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>

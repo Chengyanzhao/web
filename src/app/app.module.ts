@@ -4,11 +4,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
-
 import { AppComponent } from './app.component';
 
 import { appRoutes } from './app.routes';
-
 
 /**
  * 通用工具指令
@@ -29,7 +27,7 @@ import { GoHomeDirective } from './shared/go-home.directive';
     GoHomeDirective,
     CancelDefEvent,
     FigletDirective,
-    BackTopDirective
+    BackTopDirective,
     // directive end
   ],
   imports: [
