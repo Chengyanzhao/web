@@ -1,5 +1,48 @@
 .header{
     color: #fff;
     background-color: #666;
-    height: 600px;
+    height: 750px;
+    & .profile-container{
+        padding-top:15px;
+        text-align: center;
+        & img{
+            border-radius: 100%;
+        }
+    }
+    & .contact-container{
+        & i{
+            width: 14px;
+            margin: 0 5px;
+            text-align: center;
+        }
+        & ul{
+            list-style: none;
+        }
+    }
+    & .nav-container{
+        & .tip{
+            text-indent:2em;
+        }
+        & h3{
+            text-align: center;
+        }
+        & ul{
+            list-style: none;
+            & li{
+                line-height: 30px;
+
+                & a{
+                    padding-left: 20px;
+                    color: #fff;
+                    display: block;
+                    border-radius: 5px;
+                    text-decoration: none;
+
+                    &:hover{
+                        background-color: #999;
+                    }
+                }
+            }
+        }
+    }
 }

@@ -19,6 +19,7 @@
       "mobile": false,
       "styles": [
         "../node_modules/bootstrap/dist/css/bootstrap.css",
+        "../src/assets/font-icon/font-awesome-4.7.0/css/font-awesome.min.css",
         "styles.scss"
       ],
       "scripts": [

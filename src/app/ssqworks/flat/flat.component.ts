@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { flyInLeft } from '../../animations/fly-in-left';
+import { flyInRight } from '../../animations/fly-in-right';
 
 @Component({
   selector: 'app-flat',
   templateUrl: './flat.component.html',
   styleUrls: ['./flat.component.css'],
   animations: [
-    flyInLeft
+    flyInRight
   ]
 })
 export class FlatComponent implements OnInit {
